@@ -1,0 +1,781 @@
+<!doctype html>
+<html ⚡ lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>I'Max - Communicate More</title>
+    <meta name="theme-color" content="#216583">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta name="title" content="Maxpress e I’M Press agora são I’Max">
+    <meta name="description" content="O I’Max é uma nova jornada tecnológica que nasce da fusão entre a tradição que a Maxpress inspira com a mentalidade de startup do I’M Press - dois grandes fornecedores de tecnologia de comunicação. Conheça o que o I’Max pode fazer por você!">
+    <!-- <link rel="canonical" href="./regular-html-version.html"> -->
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+
+
+
+
+
+
+
+    <style amp-custom>
+        html{line-height:1.15;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+        body{margin:0}
+        main{display:block}
+        h1{font-size:2em;margin:.67em 0}
+        hr{box-sizing:content-box;height:0;overflow:visible}
+        pre{font-family:monospace,monospace;font-size:1em}
+        a{background-color:transparent;color:#1e3d5a;text-decoration:none}
+        a:hover{font-weight:600}
+        abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+        b,strong{font-weight:bolder}
+        code,kbd,samp{font-family:monospace,monospace;font-size:1em}
+        small{font-size:80%}
+        sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+        sub{bottom:-.25em}
+        sup{top:-.5em}
+        img{border-style:none}
+        button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}
+        button,input{overflow:visible}
+        button,select{text-transform:none;outline:none}
+        button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}
+        button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}
+        button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}
+        fieldset{padding:.35em .75em .625em}
+        legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}
+        progress{vertical-align:baseline}
+        textarea{overflow:auto}
+        [type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}
+        [type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}
+        [type="search"]{-webkit-appearance:textfield;outline-offset:-2px}
+        [type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+        ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+        details{display:block}
+        summary{display:list-item}
+        template{display:none}
+        [hidden]{display:none}
+
+
+
+
+
+
+        :root{--red-color:#e83d20;--green-color:#00acaf;--bluegray-color:#216583;--lightgray-color:#757882;--gray-color:#575f72}
+        h1,h2,h3,h4{font-family:'Cairo',sans-serif;line-height:1.5;display:block;font-weight:600;color:var(--green-color);box-sizing:border-box}
+        p,span,h5{font-family:'Kanit',sans-serif;font-size:16px;font-weight:300;text-align:justify;display:block;line-height:1.5;box-sizing:border-box}
+        h1{font-size:70px}
+        h2{font-size:50px}
+        h3{font-size:30px}
+        h4{font-size:27px}
+        h5{font-size:16px;font-weight:400}
+        body{background-color:var(--bluegray-color)}
+        .scrollToTop{color:#fff;font-size:1.4em;box-shadow:0 1px 1px 0 rgba(0,0,0,.14),0 1px 1px -1px rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);width:50px;height:50px;border-radius:50%;border:none;outline:none;background:#005AF0;z-index:9999;bottom:1rem;right:1rem;position:fixed;opacity:0;visibility:hidden;display:flex;flex-direction:column;flex-wrap:nowrap;align-items:center;justify-content:center}
+        .target{position:relative}
+        .target-anchor{position:absolute;top:-72px;left:0}
+        .scrollToTop svg{fill:#fff;position:relative;display:block;width:80%;cursor:pointer}
+        @keyframes fadeBtn {
+        0%{width:100%;height:100%;background-color:rgba(255,255,255,0.3)}
+        100%{width:150%;height:180%;background-color:transparent}
+        }
+        @keyframes fadeBtn1 {
+        0%{width:100%;height:100%;background-color:rgba(0,172,175,0.3)}
+        100%{width:150%;height:180%;background-color:transparent}
+        }
+        @keyframes arrowDown {
+        0%{opacity:0;top:-30px}
+        50%{opacity:1;top:0}
+        100%{opacity:0;top:35px}
+        }
+        @keyframes explosion {
+        0%{opacity:0;transform:scale(0)}
+        10%{opacity:1;transform:scale(1)}
+        100%{opacity:1;transform:scale(1.1)}
+        }
+        @keyframes fadeIn {
+        0%{opacity:0}
+        70%{opacity:1}
+        100%{opacity:0}
+        }
+        @keyframes cloud {
+        0%{top:0;left:0}
+        20%{top:10px;left:20px}
+        40%{top:5px;left:-30px}
+        66%{top:-20px;left:-20px}
+        100%{top:0;left:0}
+        }
+        @keyframes envelope {
+        0%{opacity:0;top:50%;left:-20px}
+        70%{opacity:1;top:45%;left:-10px}
+        100%{opacity:100%;top:40%;left:0}
+        }
+        header{position:relative;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:center;box-sizing:border-box;padding:10px;z-index:100}
+        .fullContainer{position:relative;display:block;box-sizing:border-box;overflow-x:hidden;background-color:#fff}
+        .logoPng{position:relative;display:block;z-index:100;
+            /*filter:drop-shadow(0 0 2rem black);*/
+            align-self:center;justify-self:center}
+        .section1Wrapper{background-position:top center;background-size:cover;background-repeat:no-repeat;background-origin:content-box;position:relative;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto;justify-content: stretch;height:auto;box-sizing:border-box;top:0;overflow:hidden;background-color: #777}
+        .headerNav{position:relative;display:grid;grid-template-columns:auto 1fr 1fr auto;grid-template-rows:auto;grid-column:1 / -1;grid-row:1 / 2;box-sizing:border-box;max-width:1700px;width: 100%;margin:0 auto;padding:20px 0 0;align-content:center;justify-content:center}
+        .headerBtnsWrapper{position:relative;z-index:200;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;box-sizing:border-box;grid-column:2 / 4;grid-row:1 / 2}
+        .headerBtn{font-family:'Kanit',sans-serif;font-size:18px;color:#fff;font-weight:200;position:relative;display:inline-block;box-sizing:border-box;padding:10px 15px;margin:0 10px;border-radius:7px;letter-spacing:2px;transition:.3s ease all;text-align:center}
+        #navbar{position:fixed;top:0;left:0;display:grid;grid-template-columns:150px 1fr 150px;grid-template-rows:auto;width:100vw;box-sizing:border-box;justify-content:center;align-content:center;z-index:200;background-color:#fff;box-shadow:0 0 50px 0 rgba(0,0,0,.5);transition:top .3s;height:90px;top:-120px}
+        .navbarBtnsWrapper{display:flex;flex-direction:row;flex-wrap:nowrap;box-sizing:border-box;justify-content:center;align-items:center;position:relative;grid-column:2 / 3;grid-row:1 / 2;width:100%}
+        .logoNavBar{position:relative;display:block;grid-column:1 / 2;grid-row:1 / 2;justify-self:center;align-self:center}
+        .logoNavbarImg{position:relative;display:block;height:40px;width:110px}
+        #navbar .headerBtn{color:var(--bluegray-color)}
+        #loginBtn{position:relative;z-index:100;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;background-color:transparent;border:1px solid #fff;border-radius:10px;padding:10px 20px;cursor:pointer;filter:drop-shadow(0 0 0.75rem black)}
+        #loginBtn span{font-size:20px;margin-left:10px;color:#fff;letter-spacing:1px}
+        #loginBtn:after{content:"";background-color:rgba(255,255,255,0);width:100%;position:absolute;height:100%;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:10px;display:block}
+        #loginBtn:hover::after{animation-name:fadeBtn;animation-duration:1s}
+        .loginBtnWrapper{position:relative;grid-column:4 / 5;grid-row:1 / 2;display:block;box-sizing:border-box;align-self:center;justify-self:center}
+        .loginBtnWrapper1{position:relative;display:block;grid-column:3 / 4;grid-row:1 / 2;justify-self:center;align-self:center}
+        #loginBtn1{position:relative;z-index:100;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;background-color:transparent;border:1px solid #eee2df;border-radius:10px;padding:5px 10px;cursor:pointer;right:30px}
+        #loginBtn1 span{font-size:20px;margin-left:10px;color:var(--bluegray-color);font-weight:200;letter-spacing:1px}
+        #loginBtn1:after{content:"";background-color:rgba(0,172,175,0);width:100%;position:absolute;height:100%;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:10px;display:block}
+        #loginBtn1:hover::after{animation-name:fadeBtn1;animation-duration:1s}
+        .sidebarContainer{position:absolute;z-index:999}
+        .mobileMenu{position:relative;width:300px;height:80vh;background-color:var(--bluegray-color);z-index:500;display:flex;flex-direction:column;flex-wrap:nowrap;align-items:center;justify-content:center;right:0;top:0;border-radius:0 0 0 70px;box-sizing:border-box;z-index:980}
+        #sidebar{background-color:transparent;box-sizing:border-box}
+        .i-amphtml-sidebar-mask{opacity:.8;z-index:200}
+        #sidebar button svg{width:20px;fill:#fff}
+        #sidebar button{position:absolute;left:30px;top:30px;background-color:transparent;border:none;cursor:pointer;outline:none}
+        #mobileMenuIcon{position:relative;display:block;box-sizing:border-box}
+        .mobileMenuBtnWrapper{position:relative;z-index:200;display:flex;flex-direction:column;flex-wrap:wrap;align-items:center;justify-content:center;box-sizing:border-box;grid-column:2 / 4;grid-row:1 / 2}
+        .mobileBtn{font-family:'Kanit',sans-serif;font-size:30px;color:#fff;font-weight:200;position:relative;display:inline-block;box-sizing:border-box;padding:10px 15px;margin:0 10px;border-radius:7px;letter-spacing:2px;transition:.3s ease all;text-align:center}
+        #hamburgerMenu{position:absolute;z-index:970;display:none;background-color:transparent;border:none;cursor:pointer;grid-column:3 / 4;grid-row:1 / 2;align-self:center;justify-self:center}
+        #navbar #hamburgerMenu{position:relative;z-index:970;display:none;background-color:transparent;border:none;cursor:pointer;grid-column:2 / 3;grid-row:1/ 2;align-self:center;justify-self:center}
+        #mobileMenuIcon{width:30px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media (min-width: 2000px) {
+        h1{font-size:50px}
+        h2{font-size:43px}
+        }
+        @media (min-width: 1400px) and (max-width: 1799px) {
+        .headerNav{padding:20px}
+        }
+        @media (min-width: 1024px) and (max-width: 1399px) {
+        .headerNav{padding:20px}
+        .headerBtnsWrapper{justify-content:space-between;padding:0 20px}
+        }
+        @media (min-width: 620px) and (max-width: 699px) {
+        .headerNav{padding:20px;width: 100%;justify-self:end;align-self: end}
+        .mockup3png{right:20px;width:500px!important;height:400px!important}
+        .headerBtn{display:none}
+        .loginBtnWrapper{display: none}
+        #hamburgerMenu{display:block;justify-self:end}
+        #navbar #hamburgerMenu{display:block;grid-column:2 / -1;justify-self:end;margin-right:40px}
+        #loginBtn{position:relative;z-index:100;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;background-color:transparent;border:1px solid #fff;border-radius:10px;padding:10px;cursor:pointer;filter:drop-shadow(0 0 0.75rem black)}
+        #loginBtn span{font-size:16px;margin-left:5px;color:#fff;letter-spacing:1px}
+        }
+        @media (min-width: 450px) and (max-width: 619px) {
+        .headerNav{padding:20px}
+        #top-page{height:50px;justify-self:center;align-self:center;padding:0;margin:0;left:-15px}
+        .bgTopoGif{display:block;width:100vw!important}
+        .mockup3png{right:20px;width:500px!important;height:400px!important}
+        .headerBtn{display:none}
+        .headerBtnsWrapper{left:-20px}
+        #hamburgerMenu{display:block;justify-self:end}
+        #navbar #hamburgerMenu{grid-column:2 / -1;display:block;justify-self:end;margin-right:40px}
+        #unlockedSvg{height:30px;padding:0;margin:0}
+        .loginBtnWrapper{align-self:center;justify-self:center}
+        #loginBtn{position:relative;z-index:100;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;background-color:transparent;border:1px solid #fff;border-radius:10px;padding:10px 10px 10px 0;cursor:pointer;filter:drop-shadow(0 0 0.75rem black)}
+        #loginBtn span{font-size:16px;margin-left:5px;color:#fff;letter-spacing:1px}
+        }
+        @media (min-width: 320px) and (max-width: 449px) {
+        .headerNav{padding:20px}
+        #top-page{height:50px;justify-self:center;align-self:center;padding:0;margin:0;left:-15px}
+        .navbarBtnsWrapper{display:none}
+        #navbar #hamburgerMenu{position:relative;z-index:970;display:block;grid-column:2 / -1;margin-right:40px;justify-self:end;align-self:center;background-color:transparent;border:none;cursor:pointer;right:0}
+        .mockup3png{right:20px;width:500px!important;height:400px!important}
+        .headerBtn{display:none}
+        .headerBtnsWrapper{left:-20px}
+        #hamburgerMenu{display:block;justify-self:end;}
+        #unlockedSvg{height:30px;padding:0;margin:0}
+        .loginBtnWrapper{align-self:center;justify-self:center}
+        #loginBtn{position:relative;z-index:100;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;background-color:transparent;border:1px solid #fff;border-radius:10px;padding:10px 10px 10px 0;cursor:pointer;filter:drop-shadow(0 0 0.75rem black)}
+        #loginBtn span{font-size:16px;margin-left:5px;color:#fff;letter-spacing:1px}
+        }
+        @media (max-width: 700px) and (orientation: landscape) {
+        }
+        @media (max-width: 650px) {
+        .loginBtnWrapper,.loginBtnWrapper1{display:none}
+        }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  "name": "I'MAX - Communicate More",
+  "url": "https://www.i-maxpr.com",
+  "logo": "http://local.i-maxpr.com/pages/img/logo.png",
+  "description": "O I’Max é uma nova jornada tecnológica que nasce da fusão entre a tradição que a Maxpress inspira com a mentalidade de startup do I’M Press - dois grandes fornecedores de tecnologia de comunicação. Conheça o que o I’Max pode fazer por você!",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "São Paulo, Brasil",
+    "postalCode": "04089-010",
+    "streetAddress": "Al. dos Maracatins 426 cj 409"
+  },
+  "email": "suporte@i-maxpr.com",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+55 11 30906119",
+    "contactType": "customer service",
+    "contactOption": "TollFree",
+    "areaServed": ["BR","US","ES"],
+    "availableLanguage": ["en","Portuguese","es"]
+  },{
+    "@type": "ContactPoint",
+    "telephone": "+55 11 33412800",
+    "contactType": "customer service",
+    "contactOption": "TollFree",
+    "areaServed": ["US","BR","419"],
+    "availableLanguage": ["en","es","Portuguese"]
+  }],
+  "sameAs" : [
+    "https://www.facebook.com/IMaxBR/",
+    "https://www.linkedin.com/company/imaxpr"
+  ]
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+
+
+
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900|Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512"  href="img/favicon/favicon-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+
+
+
+
+
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+
+
+  <body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="fullContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sidebarContainer">
+  <amp-sidebar id="sidebar" class="sample-sidebar" layout="nodisplay" side="right">
+  <div class="mobileMenu">
+    <button id="mobileMenuCloseBtn" on="tap:sidebar.close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/></svg>
+    </button>
+    <div class="mobileMenuBtnWrapper">
+      <a class="mobileBtn" id="mobileBtn1" href="#quemSomos">QUEM SOMOS</a>
+      <a class="mobileBtn" id="mobileBtn2" href="#Diferenciais">DIFERENCIAIS</a>
+      <a class="mobileBtn" id="mobileBtn3" href="#recursos">RECURSOS</a>
+      <a class="mobileBtn" id="mobileBtn4" href="#redeNeural">REDE NEURAL</a>
+      <a class="mobileBtn" id="mobileBtn5" href="#servicos">SERVIÇOS</a>
+      <a class="mobileBtn" id="mobileBtn6" href="#contato">CONTATO</a>
+    </div>
+  </div>
+  </amp-sidebar>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="target-anchor"
+    id="top"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="navbar">
+  <a href="#top" class="logoNavBar">
+    <amp-img class="logoNavbarImg" src="img/logo.png" width="181" height="70" layout="responsive" alt="logo I'MAX"></amp-img></a>
+    <button on="tap:sidebar.open" id="hamburgerMenu"><svg id="mobileMenuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#00acaf" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"/></svg></button>
+  <div class="navbarBtnsWrapper">
+    <a class="headerBtn" href="#quemSomos">QUEM SOMOS</a>
+    <a class="headerBtn" href="#Diferenciais">DIFERENCIAIS</a>
+    <a class="headerBtn" href="#recursos">RECURSOS</a>
+    <a class="headerBtn" href="#redeNeural">REDE NEURAL</a>
+    <a class="headerBtn" href="#servicos">SERVIÇOS</a>
+    <a class="headerBtn" href="#contato">CONTATO</a>
+  </div>
+  <div class="loginBtnWrapper1">
+    <a id="loginBtn1" href="https://www.i-maxpr.com/newest/login2/login.html">
+      <svg id="unlockedSvg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 47.5 62.4" xml:space="preserve" width="40" height="40">
+        <path fill="none" stroke="#eee2df" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M14.3,22.7v-5.6c0-4.9,4-9,9-9h0.9c2.7,0,5.2,1.2,6.8,3.2l5.8-4.1c-2.8-3.6-7.1-6-12-5.9h-2.3c-8.3,0-15,6.8-14.9,15.1l0,6.3"/>
+        <path fill="none" stroke="#eee2df" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M1.3,49.7c0,6.3,5.4,11.4,12,11.4h21c6.6,0,12-5.1,12-11.4V29c0-1.1-0.9-2-2-2h-41c-1.1,0-2,0.9-2,2V49.7z"/>
+        <line fill="none" stroke="#eee2df" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="23.7" y1="40.6" x2="23.7" y2="49.1"/>
+        <path fill="#eee2df" stroke="#eee2df" stroke-width="2" stroke-miterlimit="10" d="M25.4,40c0,0.9-0.7,1.6-1.6,1.6c-0.9,0-1.6-0.7-1.6-1.6s0.7-1.6,1.6-1.6C24.6,38.4,25.4,39.1,25.4,40z"/>
+      </svg>
+      <span>LOGIN</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section1Wrapper">
+      
+<div class="headerNav">
+  <svg amp-fx="fly-in-top" data-duration="800ms" data-margin-start="30%" data-easing="ease-in" id="top-page" class="logoPng" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1302.4 504"xml:space="preserve" width="160"><polygon fill="#FFFFFF" points="837.2,73.1 835.5,68.5 779.7,68.5 645.7,447.9 706.3,447.9"/><polygon fill="#FFFFFF" points="844,92.5 813.3,180.5 860.6,316 766,316 745.2,375.7 881.7,375.7 907,447.9 969.5,447.9"/><polygon fill="#FFFFFF" points="1044.3,447.9 1162.8,247 1162.8,247 1055,68.7 997.8,68.7 1108.1,249.7 987.8,447.9"/><polygon fill="#FFFFFF" points="1181.9,249.7 1292.2,68.7 1222.9,68.7 1147.4,197.6 1177.3,247 1146.1,299.8 1232.6,447.9 1302.4,447.9"/><path fill="#FFFFFF" d="M0,0v504h613.9V0H0z M108.1,447.9H30.4v-25.8l77.8-147.3V447.9z M108.1,257.2L30.4,404.6v-335h77.8V257.2zM148.4,72.1h57.4l-32.3,61.2h-25.1V72.1z M212.2,133.4l-49.1,39l19.6-39h-0.1l29.6-56V133.4z M312,182.2v265.7h-58.9V68.7h51.4l106.8,168.8L379,290.1L312,182.2z M578.5,447.9h-58.9V182.7l-96.3,153h-15.9L385,299.7L520.1,79.4l6.8-10.7h51.6V447.9z"/></svg>
+
+    <button on="tap:sidebar.open" id="hamburgerMenu"><svg id="mobileMenuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#fff" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"/></svg></button>
+
+  <div class="headerBtnsWrapper" amp-fx="fade-in fly-in-top" data-duration="1300ms" data-margin-start="30%" data-easing="ease-in">
+    <a class="headerBtn" href="#quemSomos">QUEM SOMOS</a>
+    <a class="headerBtn" href="#Diferenciais">DIFERENCIAIS</a>
+    <a class="headerBtn" href="#recursos">RECURSOS</a>
+    <a class="headerBtn" href="#redeNeural">REDE NEURAL</a>
+    <a class="headerBtn" href="#servicos">SERVIÇOS</a>
+    <a class="headerBtn" href="#contato">CONTATO</a>
+  </div>
+
+
+
+  <div class="loginBtnWrapper">
+    <a id="loginBtn" href="https://www.i-maxpr.com/newest/login2/login.html" amp-fx="fly-in-top" data-duration="1000ms" data-margin-start="30%" data-easing="ease-in">
+      <svg id="unlockedSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 47.5 62.4" xml:space="preserve" width="50" height="50">
+        <path fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round" stroke-miterlimit="10" d="M14.3,22.7v-5.6c0-4.9,4-9,9-9h0.9c2.7,0,5.2,1.2,6.8,3.2l5.8-4.1c-2.8-3.6-7.1-6-12-5.9h-2.3c-8.3,0-15,6.8-14.9,15.1l0,6.3"/>
+        <path fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M1.3,49.7c0,6.3,5.4,11.4,12,11.4h21c6.6,0,12-5.1,12-11.4V29c0-1.1-0.9-2-2-2h-41c-1.1,0-2,0.9-2,2V49.7z"/>
+        <line fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10" x1="23.7" y1="40.6" x2="23.7" y2="49.1"/>
+        <path fill="#fff" stroke="#fff" stroke-width="2.5" stroke-miterlimit="10" d="M25.4,40c0,0.9-0.7,1.6-1.6,1.6c-0.9,0-1.6-0.7-1.6-1.6s0.7-1.6,1.6-1.6C24.6,38.4,25.4,39.1,25.4,40z"/>
+      </svg>
+      <span>LOGIN</span>
+    </a>
+  </div>
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/portalIMAX.js"></script>
+
+  </body>
+
+
+</html>
