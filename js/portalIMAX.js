@@ -289,48 +289,48 @@ const tamanhoLista = 3;
 function EscreverDiaSemana(item) {
 	switch(item) {
 		case 1:
-			return 'Domingo';
+			return 'domingo';
 		case 2:
-			return 'Segunda-feira';
+			return 'segunda-feira';
 		case 3:
-			return 'Terça-feira';
+			return 'terça-feira';
 		case 4:
-			return 'Quarta-feira';
+			return 'quarta-feira';
 		case 5:
-			return 'Quinta-feira';
+			return 'quinta-feira';
 		case 6:
-			return 'Sexta-feira';
+			return 'sexta-feira';
 		case 7:
-			return 'Sábado';
+			return 'sábado';
 	};
 };
 
 function EscreverMes(it) {
 	switch(it) {
 		case 1:
-			return 'Janeiro';
+			return 'janeiro';
 		case 2:
-			return 'Fevereiro';
+			return 'fevereiro';
 		case 3:
-			return 'Março';
+			return 'março';
 		case 4:
-			return 'Abril';
+			return 'abril';
 		case 5:
-			return 'Maio';
+			return 'maio';
 		case 6:
-			return 'Junho';
+			return 'junho';
 		case 7:
-			return 'Julho';
+			return 'julho';
 		case 8:
-			return 'Agosto';
+			return 'agosto';
 		case 9:
-			return 'Setembro';
+			return 'setembro';
 		case 10:
-			return 'Outubro';
+			return 'outubro';
 		case 11:
-			return 'Novembro';
+			return 'novembro';
 		case 12:
-			return 'Dezembro';
+			return 'dezembro';
 	};
 };
 
@@ -366,6 +366,7 @@ for(let i = 0; i <= tamanhoLista; i++) {
 			console.log(`mesAtual ${mesAtual}`);
 			console.log(`anoAtual ${anoAtual}`);
 			const listItem = document.createElement('span');
+			listItem.className = 'dropDownItem';
 
 			let weekend = false;
 			let tomorrow = true;
@@ -389,7 +390,7 @@ for(let i = 0; i <= tamanhoLista; i++) {
 			if(weekend === false) {
 				let text = '';
 				if(tomorrow === true) {
-					text = document.createTextNode(`Amanhã, Dia ${diaAtual} de ${EscreverMes(mesAtual)}, ${EscreverDiaSemana(diaSemanaAtual)}`);
+					text = document.createTextNode(`Amanhã, dia ${diaAtual} de ${EscreverMes(mesAtual)}, ${EscreverDiaSemana(diaSemanaAtual)}`);
 				} else {
 					text = document.createTextNode(`Dia ${diaAtual} de ${EscreverMes(mesAtual)}, ${EscreverDiaSemana(diaSemanaAtual)}`);
 
