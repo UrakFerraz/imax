@@ -281,82 +281,123 @@ function lighthouse() {
 
 
 
-const data = new Date();
-
-let hoje = data.getDate();
-
-const totalDiasListados = 3;
-
-let diaSemana = data.getDay() +1;
-
-let mesAtual = data.getMonth() +1;
-
-let anoAtual = data.getFullYear();
-
-let ultimoDiaMes = (new Date(anoAtual, mesAtual + 1, 0)).getDate();
-
-console.log(`ultimoDiaMes ${ultimoDiaMes}`);
-
-function escreverMesAtual(mes) {
-	switch (mes) {
-	case 1:
-		return 'Janeiro';
-	case 2:
-		return 'Fevereiro';
-	case 3:
-		return 'Março';
-	case 4:
-		return 'Abril';
-	case 5:
-		return 'Maio';
-	case 6:
-		return 'Junho';
-	case 7:
-		return 'Julho';
-	case 8:
-		return 'Agosto';
-	case 9:
-		return 'Setembro';
-	case 10:
-		return 'Outubro';
-	case 11:
-		return 'Novembro';
-	case 12:
-		return 'Dezembro';
-	default:
-		return 'mes inexistente';
-	};
-};
-
-
-
-const feriadosAnoAtual = [{mes: 1, dia: 1}, {mes: 2, dia: 25}, {mes: 3, dia: 10}, {mes: 4, dia: 21}, {mes: 5, dia: 1}, {mes: 6, dia: 11}, {mes: 9, dia: 7}, {mes: 10, dia: 12}, {mes: 11, dia: 2}, {mes: 11, dia: 15}, {mes: 12, dia: 25}];
-
-
 
 let listaDias = document.querySelector('.contatosModalSelectDayFormDialogBox');
 
+const tamanhoLista = 3;
 
-
-console.log(hoje);
-
-// criar lista com 4 datas
-// inicia amanha
-// descontar dia 1 e dia 7 são fds
-// descontar feriados
-// quando o dia chegar ao ultimo dia do mes iniciar outro mes
-
-
-
-
-for(var i = 0; i <= totalDiasListados; i++) {
-	const listItem = document.createElement('span');
-	listItem.className = 'dropDownItem';
-	if (i === 0) {
-		listItem.textContent = 'Amanhã';
-	}else {
-		listItem.textContent = `${hoje +1} ${escreverMesAtual(mesAtual)}`;
+function EscreverDiaSemana(item) {
+	switch(item) {
+		case 1:
+			return 'Domingo';
+		case 2:
+			return 'Segunda-feira';
+		case 3:
+			return 'Terça-feira';
+		case 4:
+			return 'Quarta-feira';
+		case 5:
+			return 'Quinta-feira';
+		case 6:
+			return 'Sexta-feira';
+		case 7:
+			return 'Sábado';
 	};
-	listaDias.appendChild(listItem);
-	hoje++;
+};
+
+function EscreverMes(it) {
+	switch(it) {
+		case 1:
+			return 'Janeiro';
+		case 2:
+			return 'Fevereiro';
+		case 3:
+			return 'Março';
+		case 4:
+			return 'Abril';
+		case 5:
+			return 'Maio';
+		case 6:
+			return 'Junho';
+		case 7:
+			return 'Julho';
+		case 8:
+			return 'Agosto';
+		case 9:
+			return 'Setembro';
+		case 10:
+			return 'Outubro';
+		case 11:
+			return 'Novembro';
+		case 12:
+			return 'Dezembro';
+	};
+};
+
+const feriados = [
+	[1,1,2020,'Confraternização Universal'],
+	[24,2,2020,'Carnaval'],
+	[25,2,2020,'Carnaval'],
+	[10,4,2020,'Paixão de Cristo'],
+	[21,4,2020,'Tiradentes'],
+	[1,5,2020,'Dia do Trabalho'],
+	[11,6,2020,'Corpus Christi'],
+	[7,9,2020,'Independência do Brasil'],
+	[12,10,2020,'Nossa Sr.a Aparecida - Padroeira do Brasil'],
+	[2,11,2020,'Finados'],
+	[15,11,2020,'Proclamação da República'],
+	[25,12,2020,'Natal'],
+];
+
+for(let i = 0; i <= tamanhoLista; i++) {
+	let dia = new Date();
+	dia.setDate(dia.getDate() + i + 1);
+	let diaSemanaAtual = dia.getDay() +1;
+	let diaAtual = dia.getDate();
+	let mesAtual = dia.getMonth() +1;
+	let anoAtual = dia.getFullYear();
+	// console.log(`dia ${dia}`);
+	let ultimoDiaMes = (new Date(anoAtual, mesAtual, 0)).getDate();
+
+	function checkFds() {
+		if (diaSemanaAtual > 1 && diaSemanaAtual < 7) {
+			console.log(`diaSemanaAtual ${diaSemanaAtual}`);
+			console.log(`diaAtual ${diaAtual}`);
+			console.log(`mesAtual ${mesAtual}`);
+			console.log(`anoAtual ${anoAtual}`);
+			const listItem = document.createElement('span');
+
+			let weekend = false;
+			let tomorrow = true;
+
+
+			function checkFeriado() {
+				feriados.forEach(function(el) {
+					let contDia = el[0];
+					let contMes = el[1];
+					if(contDia === diaAtual && contMes === mesAtual) {
+						weekend = true;
+						console.log('-----------------feriado');
+					};
+				});
+			};
+
+			checkFeriado();
+
+			i === 0 ? tomorrow = true : tomorrow = false;
+
+			if(weekend === false) {
+				let text = '';
+				if(tomorrow === true) {
+					text = document.createTextNode(`Amanhã, Dia ${diaAtual} de ${EscreverMes(mesAtual)}, ${EscreverDiaSemana(diaSemanaAtual)}`);
+				} else {
+					text = document.createTextNode(`Dia ${diaAtual} de ${EscreverMes(mesAtual)}, ${EscreverDiaSemana(diaSemanaAtual)}`);
+
+				};
+				listItem.appendChild(text);
+				listaDias.appendChild(listItem);
+			};
+		};
+	};
+	checkFds();
 };
